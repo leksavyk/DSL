@@ -1,0 +1,458 @@
+body {
+   background-color: white;
+   width: 80%;
+   min-height: 70vh;
+   border: 2px solid #D4D4D4;
+   border-radius: 30px;
+   box-shadow: 0 0 15px #A9A9A9;
+   margin: auto;
+   padding: 50px;
+   margin-bottom: 50px;
+   margin-top: 50px;
+}
+
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 0px 50px;
+    color: var(--base-color, rgb(255, 0, 17));
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: color 0.5s ease-in-out;
+}
+
+
+h2:hover {
+    --base-color: rgb(181, 14, 26);
+}
+
+
+p {
+  font-size: 24px;
+  line-height: 1.6; 
+  margin: 20px; 
+}
+
+
+a, ul, ol {
+   font-size: 24px;
+}
+
+
+hr{
+  display:block;
+  margin:60px auto;
+  height:15px;
+  width:700px;
+  border:none;
+  border-radius: 3px;
+  border-left:100px solid #f00000;
+  border-right:100px solid #300000;
+  animation: KITTAnim 1s infinite ease-in-out alternate;
+}
+
+
+hr:before{
+  content:" ";
+  display:inline-block;
+  width:15px;
+  height:15px;
+  border-left:100px solid #c00000;
+  border-right:100px solid #600000;
+  animation: KITTAnimBefore 1s infinite ease-in-out alternate;
+}
+
+
+hr:after{
+  content:" ";
+  display:inline-block;
+  width:15px;
+  height:15px;
+  border-left:100px solid #300000;
+  background-color:#300000;
+  border-right:100px solid #300000;
+  animation: KITTAnimAfter 1s infinite ease-in-out alternate;
+}
+
+
+@keyframes KITTAnim {
+   0% {
+      background-color:#300000;
+      border-left:100px solid #f00000;
+      border-right:100px solid #300000;
+   }
+   10% {
+      background-color:#300000;
+      border-left:100px solid #f00000;
+      border-right:100px solid #300000;
+   }
+   20% {
+      background-color:#300000;
+      border-left:100px solid #c00000;
+      border-right:100px solid #300000;
+   }
+   30% {
+      background-color:#300000;
+      border-left:100px solid #a00000;
+      border-right:100px solid #300000;
+   }
+   40% {
+      background-color:#300000;
+      border-left:100px solid #600000;
+      border-right:100px solid #300000;
+   }
+   50% {
+      background-color:#600000;
+      border-left:100px solid #300000;
+      border-right:100px solid #300000;
+   }
+   60% {
+      background-color:#a00000;
+      border-left:100px solid #300000;
+      border-right:100px solid #600000;
+   }
+   70% {
+      background-color:#c00000;
+      border-left:100px solid #300000;
+      border-right:100px solid #a00000;
+   }
+   80% {
+      background-color:#f00000;
+      border-left:100px solid #300000;
+      border-right:100px solid #c00000;
+   }
+   90% {
+      background-color:#c00000;
+      border-left:100px solid #300000;
+      border-right:100px solid #f00000;
+   }
+   100% {
+      background-color:#c00000;
+      border-left:100px solid #300000;
+      border-right:100px solid #f00000;
+   }
+}
+
+
+@keyframes KITTAnimBefore {
+   0% {
+      background-color:#a00000;
+      border-left:100px solid #c00000;
+      border-right:100px solid #600000;
+   }
+   10% {
+      background-color:#a00000;
+      border-left:100px solid #c00000;
+      border-right:100px solid #600000;
+   }
+   20% {
+      background-color:#c00000;
+      border-left:100px solid #f00000;
+      border-right:100px solid #a00000;
+   }
+   30% {
+      background-color:#f00000;
+      border-left:100px solid #c00000;
+      border-right:100px solid #c00000;
+   }
+   40% {
+      background-color:#c00000;
+      border-left:100px solid #a00000;
+      border-right:100px solid #f00000;
+   }
+   50% {
+      background-color:#a00000;
+      border-left:100px solid #600000;
+      border-right:100px solid #c00000;
+   }
+   60% {
+      background-color:#600000;
+      border-left:100px solid #300000;
+      border-right:100px solid #a00000;
+   }
+   70% {
+      background-color:#300000;
+      border-left:100px solid #300000;
+      border-right:100px solid #600000;
+   }
+   80% {
+      background-color:#300000;
+      border-left:100px solid #300000;
+      border-right:100px solid #300000;
+   }
+   90% {
+      background-color:#300000;
+      border-left:100px solid #300000;
+      border-right:100px solid #300000;
+   }
+   100% {
+      background-color:#300000;
+      border-left:100px solid #300000;
+      border-right:100px solid #300000;
+   }
+}
+
+
+@keyframes KITTAnimAfter {
+   0% {
+      background-color:#300000;
+      border-left:100px solid #300000;
+      border-right:100px solid #300000;
+   }
+   10% {
+      background-color:#300000;
+      border-left:100px solid #300000;
+      border-right:100px solid #300000;
+   }
+   20% {
+      background-color:#300000;
+      border-left:100px solid #600000;
+      border-right:100px solid #300000;
+   }
+   30% {
+      background-color:#600000;
+      border-left:100px solid #a00000;
+      border-right:100px solid #300000;
+   }
+   40% {
+      background-color:#a00000;
+      border-left:100px solid #c00000;
+      border-right:100px solid #600000;
+   }
+   50% {
+      background-color:#c00000;
+      border-left:100px solid #f00000;
+      border-right:100px solid #a00000;
+   }
+   60% {
+      background-color:#f00000;
+      border-left:100px solid #c00000;
+      border-right:100px solid #c00000;
+   }
+   70% {
+      background-color:#c00000;
+      border-left:100px solid #a00000;
+      border-right:100px solid #f00000;
+   }
+   80% {
+      background-color:#a00000;
+      border-left:100px solid #600000;
+      border-right:100px solid #c00000;
+   }
+   90% {
+      background-color:#600000;
+      border-left:100px solid #300000;
+      border-right:100px solid #a00000;
+   }
+   100% {
+      background-color:#600000;
+      border-left:100px solid #300000;
+      border-right:100px solid #a00000;
+   }
+}
+
+
+.some-element-after-content {
+    margin-top: 50px;
+}
+
+
+.code-editor:before,
+.code-editor:after,
+.code-editor span.control:before,
+.code-editor span.after:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	content: '';
+	position: absolute;
+	z-index: 1;
+	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: wall .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+
+.code-editor {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 40px auto 0 auto;
+   	width: 750px; 
+   	text-align: left;
+   	/* background-color: rgb(14, 13, 13); */
+      /* background-color: #140f31; */
+      background-color: #16122e;
+   	border-radius: 0 0 5px 5px;
+   	overflow: auto;
+   	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: wall .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+
+.code-editor:before {
+    content: 'Ruby Code';
+    font-family: 'Consolas';
+    color: #222;
+    padding-top: 6px; 
+    text-align: center;
+    width: 750px;
+    height: 30px;
+    background-color: #fafafa;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -7px; 
+}
+
+
+.code-editor .circle {
+    position: relative;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-top: -5px; 
+    z-index: 3;
+}
+
+
+.code-editor .circle.circle-1 {
+    background-color: #df6963;
+    left: 20px;
+}
+
+
+.code-editor .circle.circle-2 {
+    background-color: #f5e18a;
+    left: 25px;
+}
+
+
+.code-editor .circle.circle-3 {
+    background-color: #97c38a;
+    left: 30px;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.code-editor {
+   		width: 500px; 
+	}
+
+	.code-editor:before {
+		width: 500px;
+	}
+}
+
+
+@media only screen and (max-width: 479px) {
+	.code-editor {
+		width: 300px;
+	}	
+
+	.code-editor:before {
+		width: 300px;
+	}
+}
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #ccc;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+
+}
+
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0em 0;
+  height: 150px;
+  overflow: auto;
+}
+
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: black/*#473431*/;
+}
+
+
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  -moz-border-radius: .3em;
+  -o-border-radius: .3em;
+  -webkit-border-radius: .3em;
+}
+
+
+pre.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+	padding-bottom: 1px;
+}
+
+
+pre.line-numbers > code {
+	position: relative;
+}
+
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+
+	font-size: 100%;
+	left: -13em;
+	width: 3em;
+	letter-spacing: -1px;
+	background-color: #322422;
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+
+.line-numbers-rows > span {
+	pointer-events: none;
+	display: block;
+	counter-increment: linenumber;
+}
+
+
+.line-numbers-rows > span:before {
+	content: counter(linenumber);
+	color: #999;
+	display: block;
+	padding-right: 0.8em;
+	text-align: right;
+}

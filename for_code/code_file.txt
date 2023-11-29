@@ -1,0 +1,10 @@
+# Пример блока кода
+def update_document_and_current_word(image_details, flag)
+    @document.clear
+    src, width, height, style = image_details
+    @document << "img/#{src}"
+    @document << "#{width}px"
+    @document << "#{height}px"
+    @document << style
+    @current_word = @current_word + flag.to_s
+end

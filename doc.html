@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="My first documentation">
+		<meta name="author" content="Sabina, Sasha">
+		<link rel="shortcut icon" href="icons/favicon.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script>hljs.highlightAll();</script>
+		<title>First project</title>
+	</head>
+	<body>
+			<h2>Code #1</h2>
+			<p>
+				Lorem ipsum dolor <sub>sit amet</sub>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque.
+			</p>
+			<div class="code-editor">
+				<div class="circle circle-1"></div>
+				<div class="circle circle-2"></div>
+				<div class="circle circle-3"></div>
+				<pre class="line-numbers" style="tab-size: 4;">
+					<code class="language-ruby">
+# Пример блока кода
+def update_document_and_current_word(image_details, flag)
+    @document.clear
+    src, width, height, style = image_details
+    @document << "img/#{src}"
+    @document << "#{width}px"
+    @document << "#{height}px"
+    @document << style
+    @current_word = @current_word + flag.to_s
+end
+					</code>
+				</pre>
+			</div>
+			<hr>
+	</body>
+</html>
